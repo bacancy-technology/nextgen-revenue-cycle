@@ -1,0 +1,30 @@
+<svg width="1920" height="720" viewBox="0 0 1920 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1920" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF8FA"/>
+      <stop offset="0.45" stop-color="#D4F0F4"/>
+      <stop offset="1" stop-color="#B8E4EB"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0" y1="170" x2="1920" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7BD8E3" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#4BC1D1" stop-opacity="0.42"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="260" x2="1920" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4BC1D1" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#118293" stop-opacity="0.28"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#4BC1D1" fill-opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <rect width="1920" height="720" fill="url(#bg)"/>
+  <rect width="1920" height="720" fill="url(#dots)"/>
+
+  <path d="M0 214C171 268 299 266 472 228C688 181 866 128 1096 152C1276 171 1458 251 1920 354V720H0V214Z" fill="url(#wave1)"/>
+  <path d="M0 331C159 287 375 264 629 334C813 385 963 448 1190 452C1388 455 1600 408 1920 298V720H0V331Z" fill="url(#wave2)"/>
+
+  <circle cx="305" cy="132" r="142" fill="#FFFFFF" fill-opacity="0.2"/>
+  <circle cx="1638" cy="154" r="188" fill="#4BC1D1" fill-opacity="0.22"/>
+  <circle cx="1746" cy="590" r="110" fill="#FFFFFF" fill-opacity="0.16"/>
+</svg>
