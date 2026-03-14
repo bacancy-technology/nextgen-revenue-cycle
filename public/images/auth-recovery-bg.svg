@@ -1,0 +1,30 @@
+<svg width="1920" height="1200" viewBox="0 0 1920 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1920" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3F9FC"/>
+      <stop offset="0.5" stop-color="#E9F4FA"/>
+      <stop offset="1" stop-color="#DDECF5"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0" y1="160" x2="1920" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9ADCE4" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#4BC1D1" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="360" x2="1920" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7BD8E3" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#0F6F7B" stop-opacity="0.22"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#4BC1D1" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="1920" height="1200" fill="url(#bg)"/>
+  <rect width="1920" height="1200" fill="url(#grid)"/>
+
+  <path d="M0 228C206 282 420 292 657 244C896 196 1125 124 1331 150C1548 178 1728 272 1920 370V0H0V228Z" fill="url(#wave1)"/>
+  <path d="M0 420C210 334 418 316 684 391C911 456 1078 548 1301 578C1531 607 1711 548 1920 444V1200H0V420Z" fill="url(#wave2)"/>
+
+  <circle cx="212" cy="160" r="132" fill="white" fill-opacity="0.3"/>
+  <circle cx="1608" cy="164" r="192" fill="#4BC1D1" fill-opacity="0.16"/>
+  <circle cx="1742" cy="986" r="142" fill="white" fill-opacity="0.2"/>
+</svg>
