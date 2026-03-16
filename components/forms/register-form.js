@@ -12,10 +12,18 @@ import { Label } from "@/components/ui/label";
 
 const registerSchema = z
   .object({
-    fullName: z.string().min(2, "Full name is required."),
-    email: z.email("Enter a valid email address."),
-    password: z.string().min(8, "Password must be at least 8 characters."),
-    confirmPassword: z.string().min(8, "Confirm your password."),
+    fullName: z
+      .string({ required_error: "Full name is required." })
+      .min(2, "Full name is required."),
+    email: z
+      .string({ required_error: "Enter a valid email address." })
+      .email("Enter a valid email address."),
+    password: z
+      .string({ required_error: "Password must be at least 8 characters." })
+      .min(8, "Password must be at least 8 characters."),
+    confirmPassword: z
+      .string({ required_error: "Confirm your password." })
+      .min(8, "Confirm your password."),
   })
   .refine((values) => values.password === values.confirmPassword, {
     message: "Passwords do not match.",
